@@ -10,6 +10,12 @@
 ######################################################################
 
 
+# Import the datetime library
+from datetime import date                              
+# Get the current date and Print the formatted date
+print('Today is', date.today().strftime("%d/%m/%Y"),'\n')   
+
+
 import numpy as np
 from scipy.optimize import minimize as min
 
