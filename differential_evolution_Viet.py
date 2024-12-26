@@ -1,3 +1,25 @@
+'''
+Mục tiêu:
+
+Tìm giá trị nhỏ nhất của hàm số:
+
+f(a, b, c, d) = a * d * (a + b + c) + c^2 - b
+
+Với các ràng buộc:
+
+a * b * c * d >= 25
+a^2 + b^2 + c^2 + d^2 <= 40
+Giới hạn:
+
+Trong đó các giá trị của a, b, c, và d nằm trong khoảng:
+
+1 <= a, b, c, d <= 5
+Về cơ bản, đoạn mã tìm kiếm các giá trị của a, b, c, và d để hàm mục tiêu f(a, b, c, d) đạt giá trị nhỏ nhất 
+trong khi vẫn thỏa mãn các ràng buộc đã cho. 
+Đoạn mã sử dụng thuật toán differential evolution từ thư viện SciPy để giải quyết bài toán.
+'''
+
+
 import numpy as np
 from scipy.optimize import differential_evolution  # Nhập hàm differential_evolution từ SciPy
 
