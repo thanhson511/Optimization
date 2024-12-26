@@ -1,3 +1,26 @@
+'''
+Objective:
+
+Minimize the function:
+
+f(a, b, c, d) = a * d * (a + b + c) + c^2 - b
+
+Subject to the constraints:
+
+a * b * c * d >= 25
+a^2 + b^2 + c^2 + d^2 <= 40
+
+Bounds:
+
+Where the values of a, b, c, and d are within the range:
+
+1 <= a, b, c, d <= 5
+
+Essentially, the code seeks to find the values of a, b, c, and d that minimize the 
+objective function f(a, b, c, d) while satisfying the given constraints. 
+It uses the differential evolution algorithm from the SciPy library to achieve this.
+'''
+
 import numpy as np  # Import the NumPy library for numerical operations
 from scipy.optimize import differential_evolution  # Import the differential_evolution function from SciPy
 
